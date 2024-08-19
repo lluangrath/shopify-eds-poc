@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--shopify-eds-poc--lluangrath.hlx.page/
+- Live: https://main--shopify-eds-poc--lluangrath.hlx.live/
 
 ## Installation
 
