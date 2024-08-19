@@ -1,6 +1,5 @@
 {
   "mappings": [
-    "/content/shopify-eds-poc/:/",
-    "/content/shopify-eds-poc/configuration:/.helix/config.json"
+    "/content/shopify-eds-poc/:/"
   ]
 }
