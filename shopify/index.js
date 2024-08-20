@@ -1,6 +1,6 @@
 import { h, Component, Fragment, render } from '../../scripts/preact.js';
+import { LocationProvider, Route, Router } from '../scripts/router.js';
 import htm from '../../scripts/htm.js';
-
 export const html = htm.bind(h);
 
 export { Product } from './product/product.js';
