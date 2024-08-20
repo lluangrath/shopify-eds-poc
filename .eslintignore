@@ -4,3 +4,5 @@ scripts/preact-hooks.js
 scripts/htm.js
 scripts/router.js
 blocks/route/*
+blocks/preactapp/*
+shopify/*

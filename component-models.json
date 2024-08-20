@@ -207,5 +207,25 @@
         "label": "Route Name"
       }
     ]
+  },
+  {
+    "id": "preactapp",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "appName",
+        "value": "",
+        "label": "App Name"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "routes",
+        "value": "",
+        "label": "Routes",
+        "multi": true
+      }
+    ]
   }
 ]
