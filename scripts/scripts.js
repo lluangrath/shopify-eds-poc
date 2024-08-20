@@ -107,7 +107,9 @@ async function loadEager(doc) {
 
   // load preact + htm scripts
   preloadFile('/scripts/preact.js', 'script');
+  preloadFile('/scripts/preact-hooks.js', 'script');
   preloadFile('/scripts/htm.js', 'script');
+  preloadFile('/scripts/router.js', 'script');
 
   if (main) {
     decorateMain(main);
