@@ -1,9 +1,9 @@
 import { h, Component, Fragment, render } from '../../scripts/preact.js';
 import { LocationProvider, Route, Router } from '../scripts/router.js';
 import htm from '../../scripts/htm.js';
-export const html = htm.bind(h);
+import { Product } from './product/product.js';
 
-export { Product } from './product/product.js';
+export const html = htm.bind(h);
 export class ProductHome extends Component {
 render() {
     return html`
