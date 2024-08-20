@@ -1,5 +1,5 @@
-import { h, createContext, cloneElement, toChildArray } from './preact';
-import { useContext, useMemo, useReducer, useLayoutEffect, useRef } from './preact-hooks';
+import { h, createContext, cloneElement, toChildArray } from './preact.js';
+import { useContext, useMemo, useReducer, useLayoutEffect, useRef } from './preact-hooks.ja';
 
 let push;
 const UPDATE = (state, url) => {
