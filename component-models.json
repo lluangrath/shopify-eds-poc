@@ -195,5 +195,17 @@
         "label": "Reference"
       }
     ]
+  },
+  {
+    "id": "route",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "routeName",
+        "value": "",
+        "label": "Route Name"
+      }
+    ]
   }
 ]
