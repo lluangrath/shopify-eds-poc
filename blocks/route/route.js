@@ -26,7 +26,9 @@ render() {
   }
 }
 
-export default function decorate(block) {
+export default async function decorate(block) {
     const rtApp = html`<${App}/>`;
     const rt = html`<${RouteComponent} />`;
+
+    render(rt, block);
   }
