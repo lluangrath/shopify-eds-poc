@@ -3,7 +3,8 @@ import htm from '../../scripts/htm.js';
 
 const html = htm.bind(h);
 
-export default class ProductHome extends Component {
+export { Product } from './product/product.js';
+export class ProductHome extends Component {
 render() {
     return html`
         <${Fragment}>
@@ -14,3 +15,14 @@ render() {
     `;
     }
 }
+
+export default function App() {
+    return html`
+      <${LocationProvider}>
+          <${Router}>
+              <${Route} path="/storefront/product" component=${Product} />
+              <${Route} path="/storefront" component=${ProductHome} />
+          <//>
+      <//>
+    `;
+  }
