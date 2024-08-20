@@ -87,6 +87,15 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+function preloadFile(href, as) {
+  const link = document.createElement('link');
+  link.rel = 'preload';
+  link.as = as;
+  link.crossOrigin = 'anonymous';
+  link.href = href;
+  document.head.appendChild(link);
+}
+
 /**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
@@ -95,6 +104,11 @@ async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
+
+  // load preact + htm scripts
+  preloadFile('/scripts/preact.js', 'script');
+  preloadFile('/scripts/htm.js', 'script');
+
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
