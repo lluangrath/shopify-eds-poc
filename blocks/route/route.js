@@ -7,12 +7,12 @@ import { LocationProvider, Router, Route } from '../../scripts/router.js';
 
 const html = htm.bind(h);
 
-class Products extends Component {
+class Product extends Component {
 render() {
     return html`
         <${Fragment}>
         <div class="route-comp">
-            <h3>This is a Route Component for Products Page</h3>
+            <h3>This is a Route Component for Product Detail Page</h3>
         </div>
         <//>
     `;
@@ -35,7 +35,7 @@ function App() {
   return html`
     <${LocationProvider}>
         <${Router}>
-            <${Route} path="/products" component=${Products} />
+            <${Route} path="/storefront/product" component=${Product} />
             <${Route} path="/storefront" component=${ProductHome} />
         <//>
     <//>
@@ -45,6 +45,6 @@ function App() {
 export default async function decorate(block) {
     const rtApp = html`<${App}/>`;
     render(rtApp, block);
-    //const rt = html`<${Products} />`;
+    //const rt = html`<${Product} />`;
     //render(rt, block);
   }
