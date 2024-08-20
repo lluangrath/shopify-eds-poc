@@ -3,7 +3,7 @@ import htm from '../../scripts/htm.js';
 
 const html = htm.bind(h);
 
-class Product extends Component {
+export class Product extends Component {
 render() {
     return html`
         <${Fragment}>
