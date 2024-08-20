@@ -7,40 +7,40 @@ import { LocationProvider, Router, Route } from '../../scripts/router.js';
 
 const html = htm.bind(h);
 
+class Products extends Component {
+render() {
+    return html`
+        <${Fragment}>
+        <div class="route-comp">
+            <h3>This is a Route Component for Products Page</h3>
+        </div>
+        <//>
+    `;
+    }
+}
+
+class ProductHome extends Component {
+render() {
+    return html`
+        <${Fragment}>
+        <div class="route-comp">
+            <h3>Product Home</h3>
+        </div>
+        <//>
+    `;
+    }
+}
+
 function App() {
   return html`
     <${LocationProvider}>
         <${Router}>
             <${Products} path="/products" />
-            <${Route} path="product" component=${ProductHome} />
+            <${Route} path="/product" component=${ProductHome} />
         <//>
     <//>
   `;
 }
-
-class Products extends Component {
-render() {
-    return html`
-      <${Fragment}>
-        <div class="route-comp">
-          <h3>This is a Route Component for Products Page</h3>
-        </div>
-      <//>
-    `;
-  }
-}
-
-class ProductHome extends Component {
-    render() {
-        return html`
-          <${Fragment}>
-            <div class="route-comp">
-              <h3>Product Home</h3>
-            </div>
-          <//>
-        `;
-      }
-    }
 
 export default async function decorate(block) {
     const rtApp = html`<${App}/>`;
