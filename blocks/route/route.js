@@ -35,7 +35,7 @@ function App() {
   return html`
     <${LocationProvider}>
         <${Router}>
-            <${Products} path="/products" />
+            <${Route} path="/products" component=${Products} />
             <${Route} path="/storefront" component=${ProductHome} />
         <//>
     <//>
