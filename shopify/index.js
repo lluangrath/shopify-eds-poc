@@ -16,7 +16,7 @@ render() {
     }
 }
 
-export default function App() {
+export function App() {
     return html`
       <${LocationProvider}>
           <${Router}>
