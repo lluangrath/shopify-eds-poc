@@ -1,7 +1,7 @@
 import { h, Component, Fragment, render } from '../../scripts/preact.js';
 import { useState } from '../../scripts/preact-hooks.js';
 import htm from '../../scripts/htm.js';
-import style from './product-list.css';
+import './product-list.css';
 
 const html = htm.bind(h);
 
@@ -13,11 +13,7 @@ export class ProductList extends Component {
     }
 
 render() {
-    return html`
-        <style>
-        ${style}
-        </style>`
-        products.map(p=>(html`
+    return products.map(p=>(html`
         <div class="product-card">
             <div class="badge">Hot</div>
             <div class="product-thumb">
