@@ -5,11 +5,6 @@ const html = htm.bind(h);
 
 export class ProductList extends Component {
 
-    constructor(shopifyProducts) {
-        super();
-        this.products = shopifyProducts;
-    }
-
 render() {
     return products.map(p=>(html`
         <div class="product-card">
