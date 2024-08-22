@@ -7,9 +7,8 @@ const html = htm.bind(h);
 
 export class ProductList extends Component {
 
-    constructor(products) {
-        const [products, setProducts] = useState([]);
-        this.products = products;
+    constructor(shopifyProducts) {
+        this.products = shopifyProducts;
         super();
     }
 
