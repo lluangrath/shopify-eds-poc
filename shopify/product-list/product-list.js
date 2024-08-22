@@ -6,7 +6,7 @@ const html = htm.bind(h);
 export class ProductList extends Component {
 
 render() {
-    return products.map(p=>(html`
+    return this.products.map(p=>(html`
         <div class="product-card">
             <div class="badge">Hot</div>
             <div class="product-thumb">
@@ -24,6 +24,6 @@ render() {
                 </div>
                 </div>
             </div>
-        </div>;`
+        </div>`
         ))};
 }
