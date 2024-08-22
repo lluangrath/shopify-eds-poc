@@ -1,7 +1,6 @@
 import { h, Component, Fragment, render } from '../../scripts/preact.js';
-import { useState } from '../../scripts/preact-hooks.js';
 import htm from '../../scripts/htm.js';
-import './product-list.css';
+import styles from './product-list.css';
 
 const html = htm.bind(h);
 
