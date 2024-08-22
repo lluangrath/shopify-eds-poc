@@ -24,7 +24,7 @@ render() {
         <${Fragment}>
         <div class="route-comp">
             <h3>Product Home</h3>
-            <${ProductList(this.products)}>
+            <${ProductList} shopifyProducts=${this.products}>
         </div>
         <//>
     `;
