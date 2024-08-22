@@ -7,6 +7,7 @@ export class ProductList extends Component {
 
     render() {
         return html`
+        <${Fragment}>
             <div class="product-card">
                 <div class="badge">Hot</div>
                 <div class="product-thumb">
@@ -24,6 +25,7 @@ export class ProductList extends Component {
                     </div>
                     </div>
                 </div>
-            </div>`
+            </div>
+        <//>`
     }
 }
