@@ -18,12 +18,12 @@ async componentDidMount() {
     });
 }
 
-async render() {
+render() {
     return html`
         <${Fragment}>
         <div class="route-comp">
             <h3>Product Home</h3>
-            <${ProductList} products=${this.state.products} />
+            <${ProductList} products=${{test:"test"}} />
         </div>
         <//>
     `;
