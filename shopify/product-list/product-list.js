@@ -1,6 +1,5 @@
 import { h, Component, Fragment, render } from '../../scripts/preact.js';
 import htm from '../../scripts/htm.js';
-import styles from './product-list.css';
 
 const html = htm.bind(h);
 
