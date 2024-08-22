@@ -11,7 +11,6 @@ export const GRAPHQL_ENDPOINT = 'https://slalom-aem.myshopify.com/api/2024-07/gr
 export const html = htm.bind(h);
 
 export class ProductHome extends Component {
-
 async componentDidMount() {
     const products = await shopifyRequest();
     this.setState({
@@ -24,7 +23,7 @@ render() {
         <${Fragment}>
         <div class="route-comp">
             <h3>Product Home</h3>
-            <${ProductList} shopifyProducts=${this.products}>
+            <${ProductList} shopifyProducts=${this.state}>
         </div>
         <//>
     `;
