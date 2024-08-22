@@ -18,7 +18,7 @@ async componentDidMount() {
     });
 }
 
-render() {
+async render() {
     return html`
         <${Fragment}>
         <div class="route-comp">
