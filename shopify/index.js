@@ -23,7 +23,7 @@ render() {
         <${Fragment}>
         <div class="route-comp">
             <h3>Product Home</h3>
-            <${ProductList}>
+            <${ProductList} />
         </div>
         <//>
     `;
