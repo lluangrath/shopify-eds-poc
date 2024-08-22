@@ -5,9 +5,9 @@ const html = htm.bind(h);
 
 export class ProductList extends Component {
 
-    constructor() {
+    constructor(products) {
         super();
-        console.log(this.products);
+        console.log(products);
     }
     render() {
         return html`
