@@ -1,4 +1,4 @@
-import { loadScript, loadCSS } from "../../scripts/aem";
+import { loadScript, loadCSS } from "../../scripts/aem.js";
 
 export default async function decorate(block) {  
   const appDiv = document.createElement("div");
