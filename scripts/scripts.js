@@ -106,7 +106,7 @@ async function loadEager(doc) {
   const main = doc.querySelector('main');
 
   // preload shopify+preact resources
-  preloadFile('/shopify-preact/dist-aem/assets/index.css', 'style');
+  //preloadFile('/shopify-preact/dist-aem/assets/index.css', 'style');
   preloadFile('/shopify-preact/dist-aem/assets/index.js', 'script');
 
   if (main) {
