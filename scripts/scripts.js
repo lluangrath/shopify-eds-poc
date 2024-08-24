@@ -110,8 +110,8 @@ async function loadEager(doc) {
   //preloadFile('/scripts/preact-hooks.js', 'script');
   //preloadFile('/scripts/htm.js', 'script');
   //preloadFile('/scripts/router.js', 'script');
-  preloadFile('/shopify-preact/dist-aem/assets/index.css');
-  preloadFile('/shopify-preact/dist-aem/assets/index.js');
+  preloadFile('/shopify-preact/dist-aem/assets/index.css', 'style');
+  preloadFile('/shopify-preact/dist-aem/assets/index.js', 'script');
 
   if (main) {
     decorateMain(main);
