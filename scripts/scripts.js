@@ -105,11 +105,7 @@ async function loadEager(doc) {
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
 
-  // load preact + htm scripts
-  //preloadFile('/scripts/preact.js', 'script');
-  //preloadFile('/scripts/preact-hooks.js', 'script');
-  //preloadFile('/scripts/htm.js', 'script');
-  //preloadFile('/scripts/router.js', 'script');
+  // preload shopify+preact resources
   preloadFile('/shopify-preact/dist-aem/assets/index.css', 'style');
   preloadFile('/shopify-preact/dist-aem/assets/index.js', 'script');
 
@@ -144,6 +140,8 @@ async function loadLazy(doc) {
   loadHeader(doc.querySelector('header'));
   loadFooter(doc.querySelector('footer'));
 
+  /* load shopify-react app */
+  loadCSS(`${window.hlx.codeBasePath}/shopify-preact/dist-aem/assets/index.css`);
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
 
