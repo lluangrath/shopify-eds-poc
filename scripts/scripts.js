@@ -106,10 +106,12 @@ async function loadEager(doc) {
   const main = doc.querySelector('main');
 
   // load preact + htm scripts
-  preloadFile('/scripts/preact.js', 'script');
-  preloadFile('/scripts/preact-hooks.js', 'script');
-  preloadFile('/scripts/htm.js', 'script');
-  preloadFile('/scripts/router.js', 'script');
+  //preloadFile('/scripts/preact.js', 'script');
+  //preloadFile('/scripts/preact-hooks.js', 'script');
+  //preloadFile('/scripts/htm.js', 'script');
+  //preloadFile('/scripts/router.js', 'script');
+  preloadFile('/shopify-preact/dist-aem/assets/index.css');
+  preloadFile('/shopify-preact/dist-aem/assets/index.js');
 
   if (main) {
     decorateMain(main);
