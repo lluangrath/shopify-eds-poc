@@ -24,9 +24,7 @@ dist-ssr
 *.sw?
 
 # EDS ignores
-
 index.html
 public
-package*
 vite.*
 
