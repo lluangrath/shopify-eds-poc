@@ -24,7 +24,4 @@ dist-ssr
 *.sw?
 
 # EDS ignores
-index.html
-public
-vite.*
 
