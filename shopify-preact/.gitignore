@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 
 # EDS ignores
-src
+
 index.html
 public
 package*
