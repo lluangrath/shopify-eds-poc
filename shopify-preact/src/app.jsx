@@ -5,7 +5,8 @@ import ProductDetail from './components/ProductDetail/ProductDetail'
 import './app.css'
 
 export function App() {
-  console.log("routes", this.routes);
+  const appDiv = document.getElementById("app");
+  console.log("routes", appDiv.routes);
 
   return (
     <LocationProvider>
