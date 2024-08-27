@@ -5,7 +5,6 @@ export default async function decorate(block) {
   
   const appDiv = document.createElement("div");
   appDiv.id = "app";
-  appDiv.setAttribute("category", "snowboard");
 
   block.textContent = '';
   block.append(appDiv);

@@ -59,9 +59,10 @@ const getShopifyId = (textId) => {
 
 export default class ProductList extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {products:[]};
+        console.log('props', props);
     }
 
     async componentDidMount() {
