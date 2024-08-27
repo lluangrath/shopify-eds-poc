@@ -6,7 +6,7 @@ export default async function decorate(block) {
   const appDiv = document.createElement("div");
   appDiv.id = "app";
 
-  console.log('block',block.textContent);
+  console.log('block',block);
   block.textContent = '';
   block.append(appDiv);
 }
