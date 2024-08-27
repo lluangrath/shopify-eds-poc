@@ -5,7 +5,7 @@ export default async function decorate(block) {
   
   const appDiv = document.createElement("div");
   appDiv.id = "app";
-  appDiv.routes = getMetadata("routes");
+  appDiv.aemProps = block.textContent.matchAll(/(?:\w{2,}\s?)+(?<!\n)/g);
 
   block.textContent = "";
   block.append(appDiv);

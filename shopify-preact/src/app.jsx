@@ -6,7 +6,7 @@ import './app.css'
 
 export function App() {
   const appDiv = document.getElementById("app");
-  console.log("routes", appDiv.routes);
+  console.log("aemProps", appDiv.aemProps);
 
   return (
     <LocationProvider>
