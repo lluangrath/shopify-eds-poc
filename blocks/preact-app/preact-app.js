@@ -7,5 +7,6 @@ export default async function decorate(block) {
   appDiv.id = "app";
   appDiv.routes = getMetadata("routes");
 
+  block.textContent = "";
   block.append(appDiv);
 }
