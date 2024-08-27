@@ -5,7 +5,7 @@ export default async function decorate(block) {
   
   const appDiv = document.createElement("div");
   appDiv.id = "app";
+  appDiv.routes = getMetadata("routes");
 
-  block.routes = getMetadata("routes");
   block.append(appDiv);
 }

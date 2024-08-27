@@ -6,8 +6,6 @@ import './app.css'
 
 export function App() {
 
-  console.log('block routes', this.parentElement.routes)
-
   return (
     <LocationProvider>
       <Router>
