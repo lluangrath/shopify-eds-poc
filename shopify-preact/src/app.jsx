@@ -20,6 +20,7 @@ export function App() {
       return (
         <LocationProvider>
           <Router>
+            <Route path="/store" component={ProductList} />
             {customRoutes}
           </Router>
         </LocationProvider>
