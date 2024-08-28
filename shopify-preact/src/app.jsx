@@ -6,7 +6,13 @@ import './app.css'
 
 export function App() {
   const appDiv = document.getElementById("app");
-  console.log("aemProps", appDiv.aemProps);
+  const aemProps = appDiv.aemProps;
+
+  if (aemProps && aemProps.length > 0) {
+    console.log("aemProps", appDiv.aemProps);
+    const routes = aemProps[1].split(',');
+    console.log('routes', routes);
+  }
 
   return (
     <LocationProvider>

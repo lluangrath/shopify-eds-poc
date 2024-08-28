@@ -5,7 +5,7 @@ export default async function decorate(block) {
   
   const appDiv = document.createElement("div");
   appDiv.id = "app";
-  appDiv.aemProps = [...block.textContent.matchAll(/(?:\w{2,}\s?)+(?<!\n)/g)];
+  appDiv.aemProps = [...block.textContent.matchAll(/(?:\S{2,}\s?)+(?<!\n)/g)]; //First prop will always be App name
 
   block.textContent = "";
   block.append(appDiv);
