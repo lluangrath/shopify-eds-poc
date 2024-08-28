@@ -13,9 +13,12 @@ export function App() {
     const routes = aemProps[1][0].split(',');
     console.log('routes', routes);
 
-    const customRoutes = routes.map((route,i)=>(
-      <Route path={"/store/" + route} component={ProductList} />
-    ))
+    const customRoutes = routes.map((route,i)=>{
+      const storeComponent = route.search('product/:id')>-1?ProductDetail : ProductList;
+      return (
+        <Route path={"/store/" + route} component={storeComponent} />
+      )
+    })
 
       return (
         <LocationProvider>
