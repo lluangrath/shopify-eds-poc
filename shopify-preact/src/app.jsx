@@ -10,8 +10,20 @@ export function App() {
 
   if (aemProps && aemProps.length > 0) {
     console.log("aemProps", appDiv.aemProps);
-    const routes = aemProps[1].split(',');
+    const routes = aemProps[1][0].split(',');
     console.log('routes', routes);
+
+    const customRoutes = routes.map((route,i)=>(
+      <Route path={"/" + route} component={ProductList} />
+    ))
+
+      return (
+        <LocationProvider>
+          <Router>
+            {customRoutes}
+          </Router>
+        </LocationProvider>
+      );
   }
 
   return (
