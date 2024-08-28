@@ -77,7 +77,7 @@ export default class ProductList extends Component {
                     <img src={product.node.featuredImage.url} alt="" />
                 </div>
                 <div class="product-details">
-                    <span class="product-category">Snowboards</span>
+                    <span class="product-category"><a href="/store/testroute/snowboard">Snowboards</a></span>
                     <h5><a href={getShopifyId(product.node.id)}>{product.node.title}</a></h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
                     <div class="product-bottom-details">
