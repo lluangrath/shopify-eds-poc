@@ -14,7 +14,7 @@ export function App() {
     console.log('routes', routes);
 
     const customRoutes = routes.map((route,i)=>(
-      <Route path={"/" + route} component={ProductList} />
+      <Route path={"/store/" + route} component={ProductList} />
     ))
 
       return (
